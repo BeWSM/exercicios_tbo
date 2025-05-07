@@ -9,8 +9,8 @@ int main(){
     Vector* v = vector_construct();
     for(int i = 2; i <= n; i++){
         for(int j = i + 1; j < n; j++){
-            if(uf->parent->data[j] % (data_type)i == 0){
-                UF_union(i, uf->parent->data[j], uf);
+            if(uf->primes->data[j] % i == 0){
+                UF_union(j, i, uf);
                 
             }
         }
@@ -18,8 +18,8 @@ int main(){
     }
 
     for(int i = 2; i < n; i++){
-        if(uf->parent->data[i] == i){
-            printf("%d ", uf->parent->data[i]);
+        if(uf->primes->data[i] == i){
+            printf("%d ", uf->primes->data[i]);
         }
        
     }

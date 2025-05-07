@@ -5,7 +5,7 @@
 
 typedef struct
 {
-    Vector* parent;
+    Vector* primes;
 } UF;
 // Inicializa estrutura com N objetos numerados de 0 a N-1.
 UF* UF_init(int N);

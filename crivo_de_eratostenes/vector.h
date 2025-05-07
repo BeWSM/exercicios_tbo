@@ -1,9 +1,8 @@
-
 #ifndef _DATA_STRUCTURES_VECTOR_H_
 #define _DATA_STRUCTURES_VECTOR_H_
 
 typedef int data_type;
-typedef int (*compare)(const void*, const void*);
+
 typedef struct
 {
     data_type *data;
@@ -63,3 +62,4 @@ void vector_clear(Vector *v);
 void vector_destroy(Vector *v);
 
 #endif
+	
